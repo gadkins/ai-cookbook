@@ -8,7 +8,7 @@ Why?
 Definitions:
 - Quantization - A way to discretize the continuous values into a finite set of values. Practically this means representing large floating point numbers with a smaller set of integers, thus compressing, for example, a 32-bit model into a 4-bit representation. Quantization is done to run models on smaller/cheaper hardware, at the expense of model performance.  
 
-- - PEFT: Parameter Efficient Fine-Tuning - Only some of the weights are updated during fine-tuning, examples include LoRA and QLoRA  
+- PEFT: Parameter Efficient Fine-Tuning - Only some of the weights are updated during fine-tuning, examples include LoRA and QLoRA  
 
 - LoRA: Low-Rank Adaptation - A specific PEFT technique, wherebhy we only update the low-rank weights, which are the most important anyway.  
 
