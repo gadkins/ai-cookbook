@@ -1,3 +1,3 @@
-# llm-cookbook
+# AI Cookbook
 
-Notebooks and experiments on quantization, fine-tuning, inference, and serving large language models (LLMs).
+Notebooks and experiments on AI data processing, fine-tuning, multimodality, and MLOps.
