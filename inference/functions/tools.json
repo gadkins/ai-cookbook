@@ -1,0 +1,45 @@
+[
+    {
+        "type": "function",
+        "function": {
+            "name": "get_current_weather",
+            "description": "This function gets the current weather in a given city",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "city": {
+                        "type": "string",
+                        "description": "The city, e.g., San Francisco"
+                    },
+                    "format": {
+                        "type": "string",
+                        "enum": ["celsius", "fahrenheit"],
+                        "description": "The temperature unit to use."
+                    }
+                },
+                "required": ["city"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "get_clothes",
+            "description": "This function provides a suggestion of clothes to wear based on the current weather",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "temperature": {
+                        "type": "string",
+                        "description": "The temperature, e.g., 15 C or 59 F"
+                    },
+                    "condition": {
+                        "type": "string",
+                        "description": "The weather condition, e.g., 'Cloudy', 'Sunny', 'Rainy'"
+                    }
+                },
+                "required": ["temperature", "condition"]
+            }
+        }
+    }    
+]
