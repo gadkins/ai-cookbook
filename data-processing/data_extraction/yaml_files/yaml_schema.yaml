@@ -1,0 +1,11 @@
+type: object
+properties:
+  names:
+    type: array
+    items:
+      type: string
+  organisations:
+    type: array
+    items:
+      type: string
+required: [names, organisations]
