@@ -61,7 +61,7 @@ class Lambda_Helper:
                 Role=self.role_arn,
                 Handler='lambda_function.lambda_handler',
                 Description=self.function_description,
-                Layers=[os.environ['LAMBDALAYERVERSIONARN']],
+                Layers=[os.environ['LAMBDA_LAYER_VERSION_ARN']],
                 Timeout=120,
                 Code={
                     'ZipFile': open(zip_file_path, 'rb').read()
