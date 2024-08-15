@@ -33,10 +33,10 @@ source extractEnv/bin/activate
 pip install -r requirements.txt
 
 # to send requests JSON, chunk_length is measured in characters (not tokens). [To tweak performance, try setting repetition_penalty to 1.1 in chat_completion.py .]
-python tgi-data-extraction.py --chunk_length 8000 --output_format json --output_file_name output --batching True --input_file_name berkshire23_60k.txt
+python3 tgi-data-extraction.py --chunk_length 8000 --output_format json --output_file_name output --batching True --input_file_name berkshire23_60k.txt
 
 # to send requests YAML.
-python tgi-data-extraction.py --chunk_length 8000 --output_format yaml --output_file_name output --batching True --input_file_name berkshire23_60k.txt
+python3 tgi-data-extraction.py --chunk_length 8000 --output_format yaml --output_file_name output --batching True --input_file_name berkshire23_60k.txt
 ```
 
 Usage Guide:
